@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+
+       height: 100%;
+       width: 100%;
+}
+body{
+    overflow-x: hidden ;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 94, 77);
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(234, 222, 224);
+}
+h1{
+    font-size: 27vw;
+    text-transform: uppercase;
+    color: rgb(30, 11, 70);
+    
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(67, 229, 89);
+}

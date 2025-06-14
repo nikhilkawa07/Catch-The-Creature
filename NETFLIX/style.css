@@ -1,0 +1,374 @@
+body {
+    background-color: black;
+}
+
+.main {
+
+    background-position: center;
+    background-size: max(1200px, 100vw);
+   background-repeat: repeat;
+    background-image: url("netlix clone/assets/background_img.jpg");
+    height: 100vh;
+    position: relative;
+    text-align: center;
+   
+}
+
+.main .box {
+    background-color: black;
+    opacity: 0.67;
+    width: 100%; /*100%*/
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+}
+@media screen and (max-width: 1200px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+   
+    .one {
+        flex-wrap: wrap;
+
+    }
+    .media1{
+        width: 500px;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    width: 75vw;
+    font-family: "Martel Sans", sans-serif;
+    margin: auto;
+    cursor: pointer;
+}
+
+nav div select {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    color: white;
+    padding: 6px 25px;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+nav button {
+    color: white;
+    background-color: red;
+    font-family: sans-serif;
+    padding: 6px 15px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 5px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+.content {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 140px);
+    gap: 25px;
+}
+
+.content> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content> :nth-child(2) {
+    font-size: 23px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+
+.content> :nth-child(3) {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.content>div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.content .btn_email {
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: sans-serif;
+    background-color: rgba(23, 23, 23, 0.7);
+    padding: 16px 138px 9px 15px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(143, 121, 121, 0.5);
+    border-image: initial;
+    cursor: pointer;
+}
+
+.content .btn1 {
+    background-color: red;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    border-radius: 3px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 12px 43px;
+    cursor: pointer;
+}
+
+.partition {
+    width: 100vw;
+    height: 8px;
+    background-color: rgb(49, 49, 49);
+    margin: 40px 0px;
+}
+
+.one {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.one>div {
+    max-width: 85vh;
+}
+
+.one>div :nth-child(1) {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Helvetica, sans-serif;
+}
+
+.one>div :nth-child(2) {
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.media1 {
+    position: relative;
+}
+
+.media1>img {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    z-index: 10;
+}
+
+.media1>video {
+    width: 500px;
+    height: 255px;
+    position: absolute;
+    top: 94px;
+    right: 41px;
+}
+
+.two {
+
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
+.media2 {
+    position: relative;
+}
+
+.media2>img {
+    width: 590px;
+    height: 450px;
+    position: relative;
+}
+
+.media2 .dbox {
+    width: 325px;
+    border-radius: 12px;
+    height: 100px;
+    border: 2px solid;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    bottom: 35px;
+    right: 125px;
+
+
+}
+
+.dbox>img {
+    width: 65px;
+    height: 80px;
+}
+
+.media2>.dbox>div {
+    font-size: 18px;
+}
+
+.media2>.dbox>div>span {
+    color: blue;
+    font-size: 18px;
+}
+
+.dbox> :nth-child(3) {
+    width: 50px;
+    height: 50px;
+}
+
+.three {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.three>div {
+    max-width: 85vw;
+}
+
+.media3 {
+    position: relative;
+}
+
+.media3>img {
+    position: relative;
+    z-index: 10;
+}
+
+.media3>video {
+    position: absolute;
+    top: -30px;
+    right: 103px;
+}
+
+.four {
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.four>img {
+    width: 400px;
+    height: 400px;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq .boxB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.faq .faq_boxes {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    padding: 0px 50px;
+    height: 12vh;
+    color: white;
+    background-color: rgb(35, 34, 35);
+    cursor: pointer;
+}
+
+.faq> :nth-child(1) {
+    font-size: 50px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    padding: 20px;
+}
+.foot
+{
+    display: flex;
+    
+}
+
+.foot ul {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 150px;
+    row-gap: 20px;
+   
+    align-content: space-around;
+    margin: auto;
+
+    list-style:none;
+   
+
+}
+.foot ul li a
+{
+    color: rgba(255, 255, 255, 0.7);
+    font-family:Arial, Helvetica ,sans-serif;
+    font-size: 14px;
+}
+.faq > .boxB :hover {
+    background-color: rgba(255, 255, 255, 0.367);
+}
+
+
+    

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor h5{
+    rotate: 20deg;
+}
+
+#main{
+    width: 100%;
+    height:100% ;
+    background-color: black;
+
+}
+
+#nav{
+    color: white;
+    padding: 2vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-transform: uppercase;
+}
+
+#part2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+    height: 300px;
+    width: 100%;
+    /* background-color: brown; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+#part2 ::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.container-img{
+    height: 300px;
+    width: 250px;
+    /* margin-left: 30px; */
+    /* padding-left: 40px; */
+    /* background-color: aqua; */
+    display: inline-block;
+    
+}
+.container-img img{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+.container-img svg{
+    height: 300px;
+    width: 250px;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+
+.container-img:hover  svg {
+    opacity: 1;
+    
+}
